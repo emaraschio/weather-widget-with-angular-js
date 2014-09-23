@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html ng-app="weatherWidget">
+<head>
+    <meta charset="utf-8">
+    <title>Weather Widget</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Ezequiel Maraschio">
+    <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.min.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.0-rc.2/angular.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="app.js"></script>
+</head>
+<body>
+  <div class="col-sm-4">
+    <div class="widget-box" ng-controller="ForecastController as forecastCtrl">
+      <div class="widget-header">
+        <h4>
+          <i class="icon-comments"></i> Weather in <span id="location">{{city}}</span>
+        </h4>
+        <span class="widget-toolbar">
+          <a href="#" data-action="collapse"><i class="icon-chevron-up"></i></a>
+          <a href="#" data-action="close"><i class="icon-remove"></i></a>
+        </span>
+      </div>
+      <div class="widget-body">
+        <div class="widget-main">
+          <div><img id="weather_img" src="{{weather_icon_src}}"></div>
+          <p>It is currently <span id="temperature">{{temperature}}</span>°C with <span id="description">{{description}}</span></p>
+          <p>Wind: <span id="wind_condition">{{wind_condition}}</span></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

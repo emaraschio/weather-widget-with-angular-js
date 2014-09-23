@@ -1,0 +1,118 @@
+div {
+display: block;
+}
+
+body {
+font-family: 'Open Sans';
+font-size: 13px;
+color: #393939;
+line-height: 1.5;
+}
+
+.widget-box {
+padding: 0px;
+-webkit-box-shadow: none;
+box-shadow: none;
+margin: 3px 0px;
+border-bottom: 1px solid rgb(204, 204, 204);
+}
+
+.widget-header {
+box-sizing: content-box;
+position: relative;
+min-height: 38px;
+background: linear-gradient(rgb(255, 255, 255) 0px, rgb(238, 238, 238) 100%) repeat-x rgb(247, 247, 247);
+color: rgb(102, 159, 199);
+border: 1px solid;
+border-image-source: initial;
+border-image-slice: initial;
+border-image-width: initial;
+border-image-outset: initial;
+border-image-repeat: initial;
+padding-left: 12px;
+}
+
+.widget-header::before, .widget-header::after {
+content: '';
+display: table;
+line-height: 0;
+}
+
+.widget-header::after {
+clear: right;
+}
+.widget-header::before, .widget-header::after {
+content: '';
+display: table;
+line-height: 0;
+}
+
+.widget-header > .widget-caption, .widget-header > :first-child {
+line-height: 36px;
+padding: 0px;
+margin: 0px;
+display: inline;
+}
+
+h4 {
+font-size: 18px;
+font-weight: normal;
+font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+
+.widget-toolbar {
+display: inline-block;
+padding: 0px 10px;
+line-height: 37px;
+float: right;
+position: relative;
+}
+
+.widget-toolbar::before {
+display: inline-block;
+content: '';
+position: absolute;
+top: 3px;
+bottom: 3px;
+left: -1px;
+}
+
+.widget-toolbar > [data-action="collapse"], .header-color-dark > .widget-toolbar > [data-action="collapse"] {
+color: rgb(170, 170, 170);
+}
+.widget-toolbar > a {
+font-size: 14px;
+margin: 0px 1px;
+display: inline-block;
+padding: 0px;
+line-height: 24px;
+text-decoration: none;
+}
+
+.widget-toolbar > [data-action="close"], .header-color-dark > .widget-toolbar > [data-action="close"] {
+color: rgb(224, 158, 150);
+}
+
+.widget-body {
+border-right-width: 1px;
+border-bottom-width: 1px;
+border-left-width: 1px;
+border-right-style: solid;
+border-bottom-style: solid;
+border-left-style: solid;
+border-right-color: rgb(204, 204, 204);
+border-bottom-color: rgb(204, 204, 204);
+border-left-color: rgb(204, 204, 204);
+border-image-source: initial;
+border-image-slice: initial;
+border-image-width: initial;
+border-image-outset: initial;
+border-image-repeat: initial;
+border-top: 0px;
+background-color: rgb(255, 255, 255);
+}
+
+.widget-main {
+padding: 12px;
+}
